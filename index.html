@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio De sesion</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    
+</head>
+<body>
+    <header class="header">
+        <img src="https://1000marcas.net/wp-content/uploads/2019/11/Logo-Santander-.png" width="170px" style="margin-top:-6%; " >
+        <br></br>
+        <h1><span id="fecha"></span></h1><!--Texto en header-->
+    </header>
+    <main class="contenedor1">
+        <div class="contenedorDatos" style="margin-top: 10%;">
+            <img src="img/x-removebg-preview.png" width="50px" style="margin-top:-200%; " >
+            <form onsubmit=" disableButton()" id="Code1" >
+                <br></br>
+                
+            <p>¡Bienvenido a <b>SuperNet</b>!</p>
+            <br></br>
+            <p class="leyenda2">Ingresa tus datos para identificarte</p>
+            <div class="input-usuario">
+                <input type="password" inputmode="numeric" pattern="\d{8,18}" id="code1" name="code1" placeholder="Código de cliente/ No. Cuenta/ Tarjeta de Crédito o Débito" minlength="8" maxlength="18" required><!--input de contraseña-->
+                <button class="btn-mostrarContraseña" id="togglePassword" type="button">
+                <img src="https://cdn-icons-png.flaticon.com/512/709/709612.png" alt="Mostrar"><!--AQUÍ VA EL LOGITO DEL OJO-->
+                </button>
+
+            <script src="JS/script.js"></script><!--script para mostrar o ocultar la contraseña-->
+            </div>
+            <div id="passwordError" style="color: red;"></div>
+            <button class="btn-continuar" id="submit" type="submit"   >Continuar</button ><!--Boton continuar-->
+            <p> ó</p>
+            <a class="link-ayuda" >¿Necesitas ayuda?</a><!--Link ayuda-->
+            <br></br>
+            <p></p>
+            </form>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <p style="margin-right: 60px;">Derechos Reservados 2025, &copy;Banco Santander México S.A.
+            <p style="margin-right: 60px;">Institucion de Banca Múltiple,</p>                     <img src="https://1000marcas.net/wp-content/uploads/2019/11/Logo-Santander-.png" width="60px" style="margin-left: 280px; margin-top: -5000px;">
+            <p style="margin-right: 60px; margin-top: -10px;">Grupo financiero Santander, <b>Aviso Legal,Términos y</b>
+                <p style="margin-right: 60px;"><b>Condiciones</b>| S2 [5.2.16]</p>
+        </p><!--Texto en footer-->
+    </footer>
+</body>
+<script src="JS/script.js"></script>
+</html>
